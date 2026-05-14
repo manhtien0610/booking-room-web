@@ -1,0 +1,36 @@
+/* Home Page Styles */
+.banner {
+  text-align: center;
+  padding: 80px 40px;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  color: white;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.banner p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.featured-rooms,
+.new-rooms {
+  padding: 60px 40px;
+}
+
+.featured-rooms h2,
+.new-rooms h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+  color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 32px;
+  }
+}

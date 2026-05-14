@@ -1,0 +1,41 @@
+/* Dashboard Page Styles */
+.dashboard {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.dashboard h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
+  color: var(--text-dark);
+}
+
+.dashboard ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.dashboard li {
+  padding: 24px;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.dashboard li:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 768px) {
+  .dashboard ul {
+    grid-template-columns: 1fr;
+  }
+}
